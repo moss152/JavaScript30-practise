@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100vh;
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: grid;
+    padding-top: 50px;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20%;
+    grid-template-areas:
+        "bee cat dog"
+        "fly donkey goat"
+        "horse little-bird pig"
+        "raven rooster wild-beast"
+    ;
+    background-color: pink;
+    height: 100vh;
+    transition: 0.07s ease-in-out;
+
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+    color: antiquewhite;
+    transition: all 0.08s;
+
+}
+
+.viewing {
+    border: 2px solid orangered;
+    transform: scale(1.1);
+}
+
+.bee {
+    border: 2px solid red;
+    background: url(./images/bee.jpg);
+    background-position: center;
+}
+
+.cat {
+    background: url(./images/Cat.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.dog {
+    background: url(./images/dog.jpg);
+    background-position: top;
+    background-size: contain;
+}
+
+.fly {
+    background: url(./images/fly.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.donkey {
+    background: url(./images/donkey.jpg);
+    background-position: center;
+}
+
+.goat {
+    background: url(./images/goat.jpg);
+    background-position: top;
+}
+
+.horse {
+    background: url(./images/horse.jpg);
+    background-position: top;
+}
+
+.little-bird {
+    background: url(./images/bird.jpg);
+    background-position: top;
+}
+
+.pig {
+    background: url(./images/pig.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.raven {
+    background: url(./images/bigbird.jpg);
+    background-position: center;
+}
+
+.rooster {
+    background: url(./images/rooster.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.wild-beast {
+    background: url(./images/gragon.jpg);
+    background-position: center;
+}
